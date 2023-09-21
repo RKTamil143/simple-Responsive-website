@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: url(https://w.forfun.com/fetch/0c/0cf96e87348269d2a43f54c2496a25e1.jpeg?w=1000&r=0.5625);
+            height: 100%;
+            background-size: cover;
+
+
+
+        }
+
+        .navbar {
+            background-color: #854e30de;
+        }
+
+        .navbar1 {
+            background-color: #854e30de;
+            height: 100px;
+            justify-content: center;
+            margin-top: -50px;
+        }
+
+        .row {
+            margin-top: 50px;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 17px rgb(0, 0, 0, 0.35);
+        }
+
+        .card {
+            background-color: #67330ed4;
+            height: 16rem;
+            width: 25rem;
+        }
+
+        .btn {
+            margin-left: 0px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="navbar1 justify-content-center ">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-2">
+                    <div class="nav-brand con my-2"><img
+                            src="https://thumbs.dreamstime.com/b/vector-coffee-logo-21363066.jpg" class="rounded"
+                            style="height: 80px; width: 80px;" alt="logo">
+                    </div>
+                </div>
+                <div class="col-8">
+                    <figure class="text-white">
+                        <blockquote class="blockquote">
+                            <p class="display-6" style="margin-left: 15px;">Namma pasanga coffee shop</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer text-white-50">
+                            nambi vaanga sandhodama ponga
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-2 justify-content-center">
+                    <div class="nav">
+                        <li class="nav-item con my-xl-3">
+                            <a href="/login" class=" btn btn-outline-light">Login</a>
+                        </li>
+                        <li class="nav-item con my-xl-3">
+                            <a href="/register" class=" btn btn-outline-light">Register</a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <p class="text-white text"> Please enter your details for <span class="text-success">registration</span>
+                </p>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-12 col-sm-4 card">
+                <form action="/register" method="post" class="card-body">
+                    <label for="username" class="form-lable text-white">User name : </label>
+                    <input type="username" class="form-control" name="username" placeholder="Enter your Username"><br>
+                    <label for="password" class="form-label text-white">Password : </label>
+                    <input type="password" class="form-control" name="password" placeholder="Enter your password"><br>
+                    <button type="submit" class="btn btn-outline-light">Register</button>
+                </form>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <p class="text-white text1">If you are an existing user go to the <span class="text-info">login</span>
+                    page </p>
+            </div>
+            <div class="col"></div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
